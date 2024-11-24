@@ -31,7 +31,7 @@ public class Match {
             System.out.println(defender.getName()+ " : " + defender.getHealth());
             roundNumber++;
         }
-        return player1.getHealth() < 0 ? player2 : player1;
+        return player1.getHealth() <= 0 ? player2 : player1;
     }
 
     public int attackScore(Player attacker){
